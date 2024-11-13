@@ -1,0 +1,73 @@
+.hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 320px) {
+    body{
+        width: 236%;
+    }
+    main nav{
+        height: 70px;
+    }
+    nav span{
+        gap: 17px;
+    }
+    .fa-splotch{
+        font-size: 1.2rem;
+        transform: rotate(90deg);
+    }
+    nav span h1{
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+    nav span h3{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .fa-cart-shopping{
+        font-size: 1rem;
+    }
+    .fa-user{
+        font-size: 1rem;
+    }
+    .data{
+        top: 20%;
+        left: 3%;
+    }
+    .data pre{
+        font-size: 2.9rem;
+    }
+    .data h1{
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+   .bt-1,.bt-2{
+    font-size: 0.7rem;
+    width: 90px;
+   }
+   .cov .about h3{
+    font-size: 1.5rem;
+    }
+    .cov .about p{
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-bottom: 9px;
+    }
+    .cov .about button{
+    width: 90px;
+    font-size: 0.7rem;
+    }
+    .feature{
+        margin-top: 4rem;
+        height: 203vh;
+    }
+    .contain{
+        height: 58vh;
+    }
+    .contain .about pre{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .logos{
+        height: 58%;
+    }
+  }

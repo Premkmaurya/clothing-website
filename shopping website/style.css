@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 96%;
+    background-position: center center;
+    object-fit: contain;
+
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+main nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #00000018;
+    justify-content: space-around;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 1;
+}
+nav span{
+    display: flex;
+    z-index: 20;
+    gap: 23px;
+    color: white;
+    text-transform: uppercase;
+}
+.name{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fa-splotch{
+    font-size: 1.7rem;
+    transform: rotate(90deg);
+}
+nav span h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+nav span h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.fa-cart-shopping{
+    font-size: 1.3rem;
+}
+.fa-user{
+    font-size: 1.3rem;
+}
+.data{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 24%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+.data pre{
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+.data h1{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.data span{
+    display: flex;
+    gap: 30px;
+}
+.bt-1{
+    color: black;
+    background-color: white;
+    height: 40px;
+    font-size: 0.86rem;
+    font-weight: 500;
+    width: 110px;
+    border: none;
+}
+.bt-1:hover{
+    background-color: black;
+    color: white;
+}
+.bt-2{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid white;
+    height: 40px;
+    font-size: 0.86rem;
+    font-weight: 500;
+    width: 110px;
+}
+.bt-2:hover{
+    background: #ffffff;
+    color: #000;
+}
+.page-2{
+    width: 100%;
+    height: 15vh;
+    overflow: hidden;
+}
+.move{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    transform: translateX(0%);
+
+}
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.4rem 0.9rem;
+}
+.marque img{
+    height: 30px;
+}
+.product{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cov{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-position: center center; 
+    object-fit: contain;
+    height: 100%;
+    width: 30%;
+    gap: 10px;
+    background: #0000002c;
+}
+.poc-1{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url(women-fashion-free-img.jpg);
+    background-position: right top;
+}
+.poc-2{
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background: url(men-fashion-free-img.jpg);
+    background-position: left top;
+}.poc-3{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    background: url(footwear-free-img.jpg);
+    background-position: right center;
+}
+.cov .about{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    top: 0%;
+    padding: 30px;
+    background: #00000059;
+    color: rgb(255, 255, 255);
+    z-index: 2300;
+    width: 100%;
+    height: 70vh;
+    padding: 10px 18px;
+}
+.cov .about .text{
+    width: 90%;
+    padding: 20px 8px;
+}
+.cov .about h3{
+    font-size: 1.8rem;
+}
+.cov .about p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+.cov .about button{
+    width: 100px;
+    height: 40px;
+    font-size: 0.71rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: black;
+    background: white;
+}
+.cov .about button:hover{
+    background: #000;
+    color: white;
+}
+.feature{
+    background: #F8F7F3;
+    width: 100%;
+    height: 180vh;
+    margin-top: 9rem;
+}
+.feature .head{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.feature .head h1{
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.feature .head h1:after {
+    content: "";
+    height: 3px;
+    width: 30%;
+    background-color: rgb(255, 217, 0);
+    position: absolute;
+    bottom: -.2em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.feature .head h1:hover{
+    width: 100%;
+    left: 0;
+}
+.sale-pdt{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.flex{
+    width: 100%;
+    margin-left: 50px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.contain{
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 30px;
+    position: relative;
+}
+.contain .image img{
+    width: 160px;
+    height: 140px;
+}
+
+.contain .about{
+position: absolute;
+bottom: 50px;
+}
+.contain .about h3{
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contain .about pre{
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+.special-edition{
+    width: 100%;
+    height: 160%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #F5F7F9;
+}
+.cart{
+    width: 90%;
+    height: 45%;
+    background-image: url(https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offer{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right,rgba(9, 185, 255, 0.39),rgba(0, 0, 0, 0));
+    padding: 0 50px;
+}
+.offer .text{
+    width:73%;
+    display: flex;
+    flex-direction: column;
+    gap:22px;
+}
+
+.offer .text h2{
+    font-size: 1.32rem;
+    font-weight: 500;
+    font-family: lato;
+}
+.offer .text h1{
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: lato;
+}
+
+.offer .text h3{
+    font-size: 0.93rem;
+    font-family: lato;
+    font-weight: 300;
+}
+.offer .text button{
+    width: 120px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    font-family: lato;
+    background: white;
+}
+.offer .text button:hover{
+    background: #000;
+    color: white;
+}
+.logos{
+    width: 100%;
+    height: 40%;
+    place-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    
+}
+.logo{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 4px;
+    text-align: center;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+.logo h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.logo p{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.sale{
+    width: 100%;
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.sale h1{
+    transition: color 0.2s ease;
+}
+.sale h1:hover{
+    color: rgb(9, 185, 255);
+}
+footer{
+    width: 100%;
+    height: 80vh;
+}
+.tags{
+    display: flex;
+    justify-content: space-between;
+    padding: 7rem 0;
+    align-items: flex-start;
+}
+.tag-1 h1{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.tag-1 h2{
+    font-size: 1.38rem;
+    font-weight: 700;
+}
+.tag-2 ul{
+    list-style: none;
+    padding-top: 10px;
+}
+.tag-2 h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.tag-2 ul li{
+    color: rgba(128, 128, 128, 0.884);
+    font-size: 1.02rem;
+    padding-top: 8px;
+    &:hover{
+        color: #0084D6;
+    }
+}
+.tag-3{
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+}
+.tag-3 h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.tag-3 input{
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    width: 180px;
+    height:46px;
+    font-size: 1em;
+    padding: 10px;
+}
+.tag-3 button{
+    width: 150px;
+    height: 47px;
+    background: #0084D6;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+.tag-3 button:hover{
+    background: #0377be;
+}
+.foot{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.foot h3{
+    font-weight: 400;
+    font-size: 0.97rem;
+    color: rgb(105, 101, 101);
+}
+.social{
+    display: flex;
+    gap: 30px;
+    font-size: 1.33em;
+    font-weight: 700;
+}
